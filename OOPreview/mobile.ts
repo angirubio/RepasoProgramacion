@@ -106,10 +106,11 @@ let iphone:Mobile = new Mobile ("iPhone", "3G", "Apple", 5, "Black", false, 1, 5
 let samsung:Mobile = new Mobile ("Samsung", "Galaxy 10", "Samsung", 10, "White", true, 3, 200);
 let phones:Mobile[] = new Array (nokia, iphone, samsung);
 
-// Pruebas en public
-// console.log(nokia); console.log(iphone); console.log(samsung);
-// nokia.is5G = true; nokia.cameraNumber = 4;
-// console.log(nokia, iphone, samsung);
+/* Pruebas en public
+console.log(nokia); console.log(iphone); console.log(samsung);
+nokia.is5G = true; nokia.cameraNumber = 4;
+console.log(nokia, iphone, samsung);
+*/
 
 // Pruebas en private
 console.log(nokia.characteristics());
