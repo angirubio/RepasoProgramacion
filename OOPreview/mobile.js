@@ -1,3 +1,6 @@
+"use strict";
+exports.__esModule = true;
+exports.Mobile = void 0;
 var Mobile = /** @class */ (function () {
     function Mobile(name, model, trademark, sdSize, color, is5G, cameraNumber, price) {
         this.name = name;
@@ -64,22 +67,5 @@ var Mobile = /** @class */ (function () {
     };
     return Mobile;
 }());
+exports.Mobile = Mobile;
 ;
-var nokia = new Mobile("Nokia", "3210", "Nokia", 1, "Grey", false, 0, 20);
-var iphone = new Mobile("iPhone", "3G", "Apple", 5, "Black", false, 1, 50);
-var samsung = new Mobile("Samsung", "Galaxy 10", "Samsung", 10, "White", true, 3, 200);
-var phones = new Array(nokia, iphone, samsung);
-//Pruebas en public
-// console.log(nokia); console.log(iphone); console.log(samsung);
-// nokia.is5G = true; nokia.cameraNumber = 4;
-// console.log(nokia, iphone, samsung);
-//Pruebas en private
-// console.log(nokia.characteristics());
-// nokia.setis5G(true); nokia.setcameraNumber(4);
-function todos() {
-    for (var i = 0; i < phones.length; i++) {
-        console.log(phones[i].characteristics());
-    }
-}
-;
-todos();

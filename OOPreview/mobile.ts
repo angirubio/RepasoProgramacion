@@ -1,4 +1,4 @@
-class Mobile
+export class Mobile
 {
     private name: string;
     private model: string;
@@ -100,21 +100,3 @@ class Mobile
         "Color: " + this.color + "\n" + "Is 5g?: " + this.is5G + "\n" + "Number of Cameras: " + this.cameraNumber
     }
 };
-
-let nokia:Mobile = new Mobile ("Nokia", "3210", "Nokia", 1, "Grey", false, 0, 20);
-let iphone:Mobile = new Mobile ("iPhone", "3G", "Apple", 5, "Black", false, 1, 50);
-let samsung:Mobile = new Mobile ("Samsung", "Galaxy 10", "Samsung", 10, "White", true, 3, 200);
-let phones:Mobile[] = new Array (nokia, iphone, samsung);
-
-/* Pruebas en public
-console.log(nokia); console.log(iphone); console.log(samsung);
-nokia.is5G = true; nokia.cameraNumber = 4;
-console.log(nokia, iphone, samsung);
-*/
-
-// Pruebas en private
-console.log(nokia.characteristics());
-nokia.setis5G(true); nokia.setcameraNumber(4);
-for ( let i = 0; i < phones.length; i++) {
-        console.log(phones[i].characteristics())
-    }
