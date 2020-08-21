@@ -26,11 +26,11 @@ var Triangulo = /** @class */ (function () {
         this.vertice3 = newVertice3;
     };
     Triangulo.prototype.calcularLongitudLados = function () {
-        var longitud1 = this.vertice1.distanciaAlOrigen();
-        var longitud2 = this.vertice2.distanciaAlOrigen();
-        var longitud3 = this.vertice3.distanciaAlOrigen();
-        var longitudLados = new Array(longitud1, longitud2, longitud3);
-        return longitudLados;
+        var lados = [];
+        lados[0] = this.vertice1.calcularDistancia(this.vertice2);
+        lados[1] = this.vertice2.calcularDistancia(this.vertice3);
+        lados[2] = this.vertice3.calcularDistancia(this.vertice1);
+        return lados;
     };
     return Triangulo;
 }());

@@ -17,14 +17,15 @@ console.log(punto3.calcularCuadrante());
 console.log(punto4.calcularMasCercano(puntos));
 console.log(triangulo1.calcularLongitudLados());
 //Funcion con el número más bajo de un array
-function masBajo(arrayN) {
-    var bajo = arrayN[0];
-    for (var i = 0; i < arrayN.length; i++) {
-        if (arrayN[i] < bajo) {
-            bajo = arrayN[i];
-        }
-    }
-    return bajo;
-}
-var ejemplo = new Array(3, 1, 90, 1, 7);
-console.log(masBajo(ejemplo));
+// function masBajo (arrayN:number[])
+// {
+//     let bajo = arrayN[0];
+//     for (let i = 0; i < arrayN.length; i++) {
+//         if (arrayN[i] < bajo) {
+//             bajo = arrayN[i]
+//         }
+//     }
+//     return bajo;
+// }
+// let ejemplo :number[] = new Array (3,1,90,1,7)
+// console.log(masBajo(ejemplo));

@@ -42,12 +42,12 @@ export class Triangulo
 
     public calcularLongitudLados():number[]
     {
-        let longitud1:number = this.vertice1.distanciaAlOrigen();
-        let longitud2:number = this.vertice2.distanciaAlOrigen();
-        let longitud3:number = this.vertice3.distanciaAlOrigen();
-        let longitudLados:number[] = new Array (longitud1,longitud2,longitud3);
+        let lados:number[] = [];
+        lados[0] = this.vertice1.calcularDistancia(this.vertice2);
+        lados[1] = this.vertice2.calcularDistancia(this.vertice3);
+        lados[2] = this.vertice3.calcularDistancia(this.vertice1);
 
-        return longitudLados
+        return lados
     }
 
 }
